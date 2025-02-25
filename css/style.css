@@ -1,0 +1,153 @@
+/*GLOBAL STYLES START*/
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.wrapper{
+	width: 75%;
+	margin: auto;
+}
+
+body{
+	background-color: rgb(15, 15, 15);
+	font-family: Helvetica, sans-serif;
+}
+
+/*GLOBAL STYLES END*/
+
+#root{
+    min-height: 100vh;
+	width: 100%;
+    display: flex;
+}
+
+nav{
+	background-color: rgb(0, 0, 0);
+	display: flex;
+    width: 60px;
+    height: 100vh;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 15px 0;
+}
+
+#dashboardcontainer{
+    display: flex;
+	flex-direction: column;
+	padding-left: 50px;
+	width: 100%;
+}
+
+header{
+	display: flex;
+	border-bottom: 1px solid grey;
+	height: 100px;
+	width: 96%;
+	color: white;
+}
+
+.heading{
+	width: 20%;
+	padding-top: 30px;
+}
+
+.cardcontainer{
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+    padding-top: 20px;
+	gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.classcard{
+	background: rgb(48, 48, 48);
+    border-radius: 8px;
+	width: 300px;
+	overflow: hidden;
+}
+
+.class-card-content{
+	padding: 15px;
+}
+
+.class-card-banner {
+    height: 150px;
+    width: 100%;
+}
+
+.class-card-title {
+	color: white;
+}
+
+.class-card-subtitle {
+	padding-top: 2px;
+	color: white;
+}
+
+.class-card-term {
+	padding-top: 2px;
+	padding-bottom: 30px;
+	color: white;
+}
+
+.class-card-to-do-list{
+	color: white;
+	list-style: none;
+	padding: 0;
+}
+
+.class-card-to-do-list-item{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.grade{
+	padding: 15px;
+	color:white;
+}
+
+
+#class-card-1 > .class-card-banner{
+	background-color: #ff3737;
+}
+
+#class-card-1 > .class-card-content > h3{
+	color: #ff3737;
+}
+
+#class-card-2 > .class-card-banner{
+	background-color: #37afff;
+}
+
+#class-card-2 > .class-card-content > h3{
+	color: #37afff;
+}
+
+#class-card-3 > .class-card-banner{
+	background-color: #62fa4e;
+}
+
+#class-card-3 > .class-card-content > h3{
+	color: #62fa4e;
+}
+
+#class-card-4 > .class-card-banner{
+	background-color: #b64ef3;
+}
+
+#class-card-4 > .class-card-content > h3{
+	color: #b64ef3;
+}
+
+/*MEDIA QUERIES START*/
+
+/*MEDIA QUERIES END*/
