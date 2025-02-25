@@ -12,7 +12,7 @@
 
 body{
 	background-color: rgb(15, 15, 15);
-	font-family: 'Sans-Serif';
+	font-family: Helvetica, sans-serif;
 }
 
 /*GLOBAL STYLES END*/
@@ -61,7 +61,7 @@ header{
 
 .cardcontainer{
 	display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
     padding-top: 20px;
 	gap: 10px;
     width: 100%;
@@ -71,6 +71,83 @@ header{
 .classcard{
 	background: rgb(48, 48, 48);
     border-radius: 8px;
-    padding: 15px;
 	width: 300px;
+	overflow: hidden;
 }
+
+.class-card-content{
+	padding: 15px;
+}
+
+.class-card-banner {
+    height: 150px;
+    width: 100%;
+}
+
+.class-card-title {
+	color: white;
+}
+
+.class-card-subtitle {
+	padding-top: 2px;
+	color: white;
+}
+
+.class-card-term {
+	padding-top: 2px;
+	padding-bottom: 30px;
+	color: white;
+}
+
+.class-card-to-do-list{
+	color: white;
+	list-style: none;
+	padding: 0;
+}
+
+.class-card-to-do-list-item{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.grade{
+	padding: 15px;
+	color:white;
+}
+
+
+#class-card-1 > .class-card-banner{
+	background-color: #ff3737;
+}
+
+#class-card-1 > .class-card-content > h3{
+	color: #ff3737;
+}
+
+#class-card-2 > .class-card-banner{
+	background-color: #37afff;
+}
+
+#class-card-2 > .class-card-content > h3{
+	color: #37afff;
+}
+
+#class-card-3 > .class-card-banner{
+	background-color: #62fa4e;
+}
+
+#class-card-3 > .class-card-content > h3{
+	color: #62fa4e;
+}
+
+#class-card-4 > .class-card-banner{
+	background-color: #b64ef3;
+}
+
+#class-card-4 > .class-card-content > h3{
+	color: #b64ef3;
+}
+
+/*MEDIA QUERIES START*/
+
+/*MEDIA QUERIES END*/
