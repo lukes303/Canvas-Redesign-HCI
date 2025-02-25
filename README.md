@@ -1,6 +1,7 @@
 # Canvas-Redesign-HCI
 
 Authors: Luke Selby, Cale Stringfellow, Joseph Rodriguez
+Team Representative: Joseph Rodriguez
 
 This is a redesign of the UI of Canvas learning management software.
 
