@@ -1,113 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- Global Stylesheet -->
+    <link href="css/global-style.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+
+    <!-- Additional stylesheets -->
+    <link href="css/dashboard.css" rel="stylesheet" type="text/css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
     <title>Canvas LMS Redesign</title>
 </head>
 <body>
     <div id="root">
+        <!-- Navigation -->
         <nav>
-            <ul class="nav-links">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul class="nav-links-group">
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/profile.svg" alt="Profile" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" class="nav-button">
+                        <img src="img/dash.svg" alt="Home" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/courses.svg" alt="Courses" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/groups.svg" alt="Groups" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/calendar.svg" alt="Calendar" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/inbox.svg" alt="Inbox" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/history.svg" alt="History" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/help.svg" alt="Help" class="nav-icon">
+                    </a>
+                </li>
             </ul>
         </nav>
+        <!--Main dashoard container-->
         <div id = "dashboardcontainer">
-            
+            <!--Header-->
             <header>
                 <h1 class="heading">
                     Dashboard
                 </h1>
+
+                <div class="header-button-tray">
+                    <button class="header-button">
+                        <img src="img/add.svg" alt="Home" class="nav-icon">
+                    </button>
+                    <button class="header-button">
+                        <img src="img/notifications.svg" alt="Home" class="nav-icon">
+                    </button>
+                    <button class="header-button">
+                        <img src="img/header-settings.svg" alt="Home" class="nav-icon">
+                    </button>
+                </div>
             </header>
-
-            <section class="cardcontainer" id="class-card-1">
-
+            <!--Container for the cards-->
+            <section class="cardcontainer">
+                <!--Card container-->
                 <div class="classcard" id="class-card-1">
+
                     <div class="class-card-banner">
                         <h4 class="grade">
                             90%
                         </h4>
                     </div>
-                    <div class="class-card-content">
+
+
+                    <div class="class-card-segment">
                         <h3 class="class-card-title">Algorithm Analysis</h3>
                         <h4 class="class-card-subtitle">C S 4413</h4>
                         <p class="class-card-term">Spring 2025</p>
-
-                        <div>
-                            <ul class="class-card-to-do-list">
-                                <li class="class-card-to-do-list-item">Assignment 1: due in 2 days</li>
-                                <li class="class-card-to-do-list-item">Assignment 2: due in 1 week</li>
-                            </ul>
-                        </div>
                     </div>
-                </div>
 
-                <div class="classcard" id="class-card-2">
-                    <div class="class-card-banner">
-                        <h4 class="grade">
-                            80%
-                        </h4>
+                    <div class="class-card-segment class-card-button-tray">
+                        <button class="button-tray-button">
+                            <img src="img/announcements.svg" alt="Home" class="nav-icon">
+                        </button>
+                        <button class="button-tray-button">
+                            <img src="img/assignments.svg" alt="Home" class="nav-icon">
+                        </button>
+                        <button class="button-tray-button">
+                            <img src="img/discussion.svg" alt="Home" class="nav-icon">
+                        </button>
+                        <button class="button-tray-button">
+                            <img src="img/files.svg" alt="Home" class="nav-icon">
+                        </button>
                     </div>
-                    <div class="class-card-content">
-                        <h3 class="class-card-title">Linear Algebra</h3>
-                        <h4 class="class-card-subtitle">C S 3333</h4>
-                        <p class="class-card-term">Spring 2025</p>
 
-                        <div>
-                            <ul class="class-card-to-do-list">
-                                <li class="class-card-to-do-list-item">Assignment 1: due in 2 days</li>
-                            </ul>
-                        </div>
+                    <div class="class-card-segment">
+                        <h3 class="class-card-title">To do</h3>
+                        <ul class="class-card-to-do-list">
+                            <li class="class-card-to-do-list-item"><a href="" class="card-links">Assignment 1: due in 2 days</a></li>
+                            <li class="class-card-to-do-list-item"><a href="" class="card-links">Assignment 2: due in 1 week</a></li>
+                        </ul>
                     </div>
-                </div>
 
-                <div class="classcard" id="class-card-3">
-                    <div class="class-card-banner">
-                        <h4 class="grade">
-                            70%
-                        </h4>
+                    <div class="class-card-segment">
+                        <h3 class="class-card-title">Quick access</h3>
+                        <ul class="class-card-to-do-list">
+                            <li class="class-card-to-do-list-item"><a href="" class="card-links">Lecture5.pdf</a></li>
+                            <li class="class-card-to-do-list-item"><a href="" class="card-links">Syllabus.pdf</a></li>
+                        </ul>
                     </div>
-                    <div class="class-card-content">
-                        <h3 class="class-card-title">Intro To OS</h3>
-                        <h4 class="class-card-subtitle">C S 3131</h4>
-                        <p class="class-card-term">Spring 2025</p>
-
-                        <div>
-                            <ul class="class-card-to-do-list">
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="classcard" id="class-card-4">
-                    <div class="class-card-banner">
-                        <h4 class="grade">
-                            85%
-                        </h4>
-                    </div>
-                    <div class="class-card-content">
-                        <h3 class="class-card-title">Human Computer Interaction</h3>
-                        <h4 class="class-card-subtitle">C S 4063</h4>
-                        <p class="class-card-term">Spring 2025</p>
-
-                        <div>
-                            <ul class="class-card-to-do-list">
-                                <li class="class-card-to-do-list-item">Assignment 1: due in 3 days</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-
+                </div>    
             </section> 
-
         </div>
+
+        <!--
+        <a href="https://www.vecteezy.com/free-vector/book-icon">Book Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/people-icon">People Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/thumbs-up-thumbs-down">Thumbs Up Thumbs Down Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/abstract">Abstract Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/megaphone-icon">Megaphone Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/notebook-icon">Notebook Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/text-bubble-icon">Text Bubble Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/illustration">Illustration Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/clock-icon">Clock Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/plus-icon">Plus Icon Vectors by Vecteezy</a>
+        -->
+
     </div>
-    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
 </body>
 </html>

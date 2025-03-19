@@ -1,0 +1,88 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.wrapper{
+	width: 75%;
+	margin: auto;
+}
+
+body{
+	background-color: rgb(15, 15, 15);
+	font-family: Helvetica, sans-serif;
+}
+
+#root{
+    min-height: 100vh;
+	width: 100%;
+    display: flex;
+}
+
+nav{
+	background-color: rgb(0, 0, 0);
+	color: white;
+	display: flex;
+    width: 60px;
+    height: 100vh;
+}
+
+.nav-links-group {
+    list-style: none;
+    padding: 0;
+    width: 100%; /* Take full width of nav */
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links-group li {
+    margin: 5px 0;
+    display: flex;
+    justify-content: center; /* This centers the button horizontally */
+    width: 100%;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.nav-icon {
+    width: 30px; /* Adjust based on your nav width */
+    height: auto;
+}
+
+header{
+	display: flex;
+	border-bottom: 1px solid grey;
+	height: 100px;
+	width: 96%;
+	color: white;
+}
+
+
+.header-button{
+	background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.heading{
+	width: 20%;
+	padding-top: 30px;
+}
+
+/* Card Links */
+.card-links{
+	color: white;
+  	text-decoration: none;
+}
+
+/* When mouse hovers over the link */
+a:hover {
+	text-decoration: underline;
+  }
+  
