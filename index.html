@@ -69,16 +69,25 @@
                 <h1 class="heading">
                     Dashboard
                 </h1>
-
+                <!--Header Buttons-->
                 <div class="header-button-tray">
+                    <!--Add card button-->
                     <button class="header-button">
                         <img src="img/add.svg" alt="Home" class="nav-icon">
                     </button>
+                    <!--Notification button-->
                     <button class="header-button">
                         <img src="img/notifications.svg" alt="Home" class="nav-icon">
                     </button>
-                    <button class="header-button">
+                    <!--Settings Buttons-->
+                    <button class="header-button" id="settings-button">
                         <img src="img/header-settings.svg" alt="Home" class="nav-icon">
+                    </button>
+                </div>
+                <!--Container for settings drop-down-->
+                <div class = "dropdown-menu" id = "settings-dropdown">
+                    <button class= "dropdown-button" id = "darkmode-button">
+                        Dark mode
                     </button>
                 </div>
             </header>
@@ -86,20 +95,16 @@
             <section class="cardcontainer">
                 <!--Card container-->
                 <div class="classcard" id="class-card-1">
-
                     <div class="class-card-banner">
                         <h4 class="grade">
                             90%
                         </h4>
                     </div>
-
-
                     <div class="class-card-segment">
                         <h3 class="class-card-title">Algorithm Analysis</h3>
                         <h4 class="class-card-subtitle">C S 4413</h4>
                         <p class="class-card-term">Spring 2025</p>
                     </div>
-
                     <div class="class-card-segment class-card-button-tray">
                         <button class="button-tray-button">
                             <img src="img/announcements.svg" alt="Home" class="nav-icon">
@@ -114,7 +119,6 @@
                             <img src="img/files.svg" alt="Home" class="nav-icon">
                         </button>
                     </div>
-
                     <div class="class-card-segment">
                         <h3 class="class-card-title">To do</h3>
                         <ul class="class-card-to-do-list">
@@ -122,7 +126,6 @@
                             <li class="class-card-to-do-list-item"><a href="" class="card-links">Assignment 2: due in 1 week</a></li>
                         </ul>
                     </div>
-
                     <div class="class-card-segment">
                         <h3 class="class-card-title">Quick access</h3>
                         <ul class="class-card-to-do-list">

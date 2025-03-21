@@ -75,6 +75,25 @@ header{
 	padding-top: 30px;
 }
 
+.dropdown-menu{
+    display: none;
+    justify-content: center;
+    background-color: rgb(48, 48, 48);
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    right: 20px;
+    top: 80px;
+}
+
+.dropdown-button{
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    margin: auto;
+}
+
 /* Card Links */
 .card-links{
 	color: white;
