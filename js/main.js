@@ -6,6 +6,5 @@ document.getElementById('settings-button').addEventListener('click', function() 
 
 // Dark mode toggle button event listener
 document.getElementById('darkmode-button').addEventListener('click', function() {
-    const body = document.body;
-    body.style.backgroundColor = body.style.backgroundColor === 'rgb(240, 240, 240)' ? 'rgb(15, 15, 15)': 'rgb(240, 240, 240)';
+    document.body.classList.toggle('light-mode')
 });

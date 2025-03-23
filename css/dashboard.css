@@ -21,10 +21,17 @@
 }
 
 .classcard{
-	background: rgb(48, 48, 48);
+	background-color: rgb(36, 36, 36);;
+	color: white;
     border-radius: 8px;
 	width: 300px;
 	overflow: hidden;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body.light-mode .classcard{
+	background-color: white;
+	color:black;
 }
 
 .class-card-banner {
@@ -32,30 +39,29 @@
     width: 100%;
 }
 
+/*
 .class-card-title {
 	color: white;
 }
+*/
 
 .class-card-subtitle {
 	padding-top: 2px;
-	color: white;
 }
 
 .class-card-segment {
 	padding: 15px;
-	/*border: 1px solid red;*/
 }
 
 .class-card-term {
 	padding-top: 3px;
-	color: white;
 }
 
 .class-card-button-tray{
 	display: flex;
-    justify-content: space-between; /* Evenly distributes buttons */
-    padding: 10px 15px; /* Add some padding inside the tray */
-    width: 100%; /* Make sure the tray takes full width of the card */
+    justify-content: space-between;
+    padding: 10px 15px;
+    width: 100%;
 }
 
 .button-tray-button{
@@ -65,12 +71,11 @@
 }
 
 .button-tray-button img{
-	width: 24px; /* Make images smaller - adjust as needed */
-    height: 24px; /* Keep aspect ratio square */
+	width: 24px;
+    height: 24px;
 }
 
 .class-card-to-do-list{
-	color: white;
 	list-style: none;
 	padding: 0;
 }
@@ -82,14 +87,25 @@
 
 .grade{
 	padding: 15px;
-	color:white;
+	color: white;
 }
 
+.card-links{
+	color: white;
+  	text-decoration: none;
+}
+
+body.light-mode .card-links{
+	color: black;
+}
 
 #class-card-1 > .class-card-banner{
 	background-color: #ff3737;
 }
 
+#class-card-1 > .class-card-segment > .class-card-title{
+	color: #ff3737;
+}
 
 #class-card-2 > .class-card-banner{
 	background-color: #37afff;
