@@ -11,6 +11,13 @@
     gap: 20px; /* Space between buttons */
 }
 
+#add-card-dropdown{
+    width: 200px;
+    height: 150px;
+    right: 90px;
+    top: 80px;
+}
+
 .cardcontainer{
 	display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 350px));

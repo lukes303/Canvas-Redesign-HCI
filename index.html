@@ -20,48 +20,66 @@
         <!-- Navigation -->
         <nav>
             <ul class="nav-links-group">
+                <!-- Profile -->
                 <li>
                     <a href="" class="nav-button">
-                        <img src="img/profile.svg" alt="Profile" class="nav-icon">
+                        <img src="img/profile.svg" alt="Profile" class="icon">
                     </a>
                 </li>
+                <!-- Dashboard -->
                 <li>
                     <a href="index.html" class="nav-button">
-                        <img src="img/dash.svg" alt="Home" class="nav-icon">
+                        <img src="img/dash.svg" alt="Home" class="icon">
                     </a>
                 </li>
+                <!-- Search -->
+                <li>
+                    <button class="nav-button" id="search-button">
+                        <img src="img/search.svg" alt="Search" class="icon">
+                    </button>
+                </li>
+                <!-- Courses -->
                 <li>
                     <a href="" class="nav-button">
-                        <img src="img/courses.svg" alt="Courses" class="nav-icon">
+                        <img src="img/courses.svg" alt="Courses" class="icon">
                     </a>
                 </li>
+                <!-- Groups -->
                 <li>
                     <a href="" class="nav-button">
-                        <img src="img/groups.svg" alt="Groups" class="nav-icon">
+                        <img src="img/groups.svg" alt="Groups" class="icon">
                     </a>
                 </li>
+                <!-- Calendar -->                
                 <li>
                     <a href="" class="nav-button">
-                        <img src="img/calendar.svg" alt="Calendar" class="nav-icon">
+                        <img src="img/calendar.svg" alt="Calendar" class="icon">
                     </a>
                 </li>
+                <!-- Inbox -->                
                 <li>
                     <a href="" class="nav-button">
-                        <img src="img/inbox.svg" alt="Inbox" class="nav-icon">
+                        <img src="img/inbox.svg" alt="Inbox" class="icon">
                     </a>
                 </li>
+                <!-- History -->                
                 <li>
                     <a href="" class="nav-button">
-                        <img src="img/history.svg" alt="History" class="nav-icon">
+                        <img src="img/history.svg" alt="History" class="icon">
                     </a>
                 </li>
+                <!-- Help -->                
                 <li>
                     <a href="" class="nav-button">
-                        <img src="img/help.svg" alt="Help" class="nav-icon">
+                        <img src="img/help.svg" alt="Help" class="icon">
                     </a>
                 </li>
             </ul>
         </nav>
+        <!--Search Sidebar-->
+        <div class = "sidebar" id = "search-sidebar">
+            
+        </div>
         <!--Main dashoard container-->
         <div id = "dashboardcontainer">
             <!--Header-->
@@ -72,17 +90,25 @@
                 <!--Header Buttons-->
                 <div class="header-button-tray">
                     <!--Add card button-->
-                    <button class="header-button">
-                        <img src="img/add.svg" alt="Home" class="nav-icon">
+                    <button class="header-button" id = "add-card-button">
+                        <img src="img/add.svg" alt="Home" class="icon">
                     </button>
                     <!--Notification button-->
-                    <button class="header-button">
-                        <img src="img/notifications.svg" alt="Home" class="nav-icon">
+                    <button class="header-button" id="notifications-button">
+                        <img src="img/notifications.svg" alt="Home" class="icon">
                     </button>
                     <!--Settings Buttons-->
                     <button class="header-button" id="settings-button">
-                        <img src="img/header-settings.svg" alt="Home" class="nav-icon">
+                        <img src="img/header-settings.svg" alt="Home" class="icon">
                     </button>
+                </div>
+                <!--Container for add card drop-down-->
+                <div class = "dropdown-menu" id = "add-card-dropdown">
+                    
+                </div>
+                <!--Container for notifications drop-down-->
+                <div class = "dropdown-menu" id = "notifications-dropdown">
+                    
                 </div>
                 <!--Container for settings drop-down-->
                 <div class = "dropdown-menu" id = "settings-dropdown">
@@ -107,16 +133,16 @@
                     </div>
                     <div class="class-card-segment class-card-button-tray">
                         <button class="button-tray-button">
-                            <img src="img/announcements.svg" alt="Home" class="nav-icon">
+                            <img src="img/announcements.svg" alt="Home" class="icon">
                         </button>
                         <button class="button-tray-button">
-                            <img src="img/assignments.svg" alt="Home" class="nav-icon">
+                            <img src="img/assignments.svg" alt="Home" class="icon">
                         </button>
                         <button class="button-tray-button">
-                            <img src="img/discussion.svg" alt="Home" class="nav-icon">
+                            <img src="img/discussion.svg" alt="Home" class="icon">
                         </button>
                         <button class="button-tray-button">
-                            <img src="img/files.svg" alt="Home" class="nav-icon">
+                            <img src="img/files.svg" alt="Home" class="icon">
                         </button>
                     </div>
                     <div class="class-card-segment">
@@ -152,6 +178,5 @@
 
     </div>
     <script src="js/main.js"></script>
-    <script src="js/dashboard.js"></script>
 </body>
 </html>
