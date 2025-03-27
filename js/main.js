@@ -39,3 +39,9 @@ document.getElementById('search-button').addEventListener('click', function() {
     const sidebar = document.getElementById('search-sidebar');
     sidebar.classList.toggle('sidebar-active');
 });
+
+// Calendar 
+document.getElementById('calendar-button').addEventListener('click', function() {
+    const sidebar = document.getElementById('calendar-sidebar');
+    sidebar.classList.toggle('sidebar-active');
+});

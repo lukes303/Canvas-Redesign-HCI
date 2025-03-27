@@ -36,6 +36,7 @@
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
 body.light-mode .classcard{
 	background-color: white;
 	color:black;
@@ -45,12 +46,6 @@ body.light-mode .classcard{
     height: 150px;
     width: 100%;
 }
-
-/*
-.class-card-title {
-	color: white;
-}
-*/
 
 .class-card-subtitle {
 	padding-top: 2px;
@@ -111,6 +106,10 @@ body.light-mode .card-links{
 }
 
 #class-card-1 > .class-card-segment > .class-card-title{
+	color: #ff3737;
+}
+
+#class-card-1 > .class-card-segment > .class-card-heading {
 	color: #ff3737;
 }
 
