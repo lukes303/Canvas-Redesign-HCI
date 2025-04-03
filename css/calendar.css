@@ -1,0 +1,35 @@
+/*Full Calendar defined settings*/
+:root {
+    --fc-button-text-color: #fff;
+    --fc-button-bg-color: #ec3a3a;
+    --fc-button-border-color: #ec3a3a;
+    --fc-button-hover-bg-color: #f75d5d;
+    --fc-button-hover-border-color: #f75d5d;
+    --fc-button-active-bg-color: #752f2f;
+    --fc-button-active-border-color: #752f2f;
+  }
+
+  /*Day headers*/
+.fc .fc-col-header-cell-cushion {
+    color:black;
+}
+
+/*Month Headers*/
+.fc .fc-toolbar-title {
+  font-size: 1.25em;
+  margin: 0px;
+}
+
+/*Day Frame*/
+.fc .fc-daygrid-day-frame:hover {
+  cursor: pointer;
+}
+
+/*Event Styling*/
+.fc-event {
+  height: .5em !important; /* Reduce height */
+  line-height: 1.3em !important; /* Adjust line height */
+  padding-top: 0.1em !important; /* Reduce top padding */
+  padding-bottom: 0.1em !important; /* Reduce bottom padding */
+  font-size: 0.85em !important; /* Optional: make text smaller */
+}

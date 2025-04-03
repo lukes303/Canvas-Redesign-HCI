@@ -5,6 +5,8 @@
     <!-- Global Stylesheet -->
     <link href="css/global-style.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="css/calendar.css" rel="stylesheet" type="text/css">
+
 
     <!-- Additional stylesheets -->
     <link href="css/dashboard.css" rel="stylesheet" type="text/css">
@@ -12,6 +14,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Libraries-->
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
+    
     <!-- Title -->
     <title>Canvas LMS Redesign</title>
 </head>
@@ -33,11 +39,13 @@
                     </a>
                 </li>
                 <!-- Search -->
+                 <!---
                 <li>
                     <button class="nav-button" id="search-button">
                         <img src="img/search.svg" alt="Search" class="icon">
                     </button>
                 </li>
+                -->
                 <!-- Courses -->
                 <li>
                     <a href="" class="nav-button">
@@ -87,6 +95,7 @@
             <h2>
                 Calendar
             </h2>
+            <div id='calendar'></div>
         </div>
         <!--Main dashoard container-->
         <div id = "dashboardcontainer">
@@ -116,7 +125,20 @@
                 </div>
                 <!--Container for notifications drop-down-->
                 <div class = "dropdown-menu" id = "notifications-dropdown">
-                    
+                    <ul id = "notification-list">
+                        <li class = "notification">
+                            <h4>Algorithm Analyis</h4>
+                            <p>Midterm 1 Graded.</p>
+                        </li>
+                        <li class = "notification">
+                            <h4>Algorithm Analyis</h4>
+                            <p>Midterm 1 Graded.</p>
+                        </li>
+                        <li class = "notification">
+                            <h4>Algorithm Analyis</h4>
+                            <p>Midterm 1 Graded.</p>
+                        </li>
+                    </ul>
                 </div>
                 <!--Container for settings drop-down-->
                 <div class = "dropdown-menu" id = "settings-dropdown">
@@ -127,7 +149,7 @@
             </header>
             <!--Container for the cards-->
             <section class="cardcontainer">
-                <!--Card container-->
+                <!--Card1 container-->
                 <div class="classcard" id="class-card-1">
                     <div class="class-card-banner">
                         <h4 class="grade">
@@ -167,7 +189,130 @@
                             <li class="class-card-to-do-list-item"><a href="" class="card-links">Syllabus.pdf</a></li>
                         </ul>
                     </div>
-                </div>    
+                </div>
+                <!--Card2 container-->
+                <div class="classcard" id="class-card-2">
+                    <div class="class-card-banner">
+                        <h4 class="grade">
+                            85%
+                        </h4>
+                    </div>
+                    <div class="class-card-segment">
+                        <h3 class="class-card-title">HCI</h3>
+                        <h4 class="class-card-subtitle">C S 4063</h4>
+                        <p class="class-card-term">Spring 2025</p>
+                    </div>
+                    <div class="class-card-segment class-card-button-tray">
+                        <button class="button-tray-button">
+                            <img src="img/announcements.svg" alt="Home" class="icon">
+                        </button>
+                        <button class="button-tray-button">
+                            <img src="img/assignments.svg" alt="Home" class="icon">
+                        </button>
+                        <button class="button-tray-button">
+                            <img src="img/discussion.svg" alt="Home" class="icon">
+                        </button>
+                        <button class="button-tray-button">
+                            <img src="img/files.svg" alt="Home" class="icon">
+                        </button>
+                    </div>
+                    <div class="class-card-segment">
+                        <h4 class="class-card-heading">To do</h4>
+                        <ul class="class-card-to-do-list">
+                            <li class="class-card-to-do-list-item"><a href="" class="card-links">Assignment 1: due in 2 days</a></li>
+                            <li class="class-card-to-do-list-item"><a href="" class="card-links">Assignment 2: due in 1 week</a></li>
+                        </ul>
+                    </div>
+                    <div class="class-card-segment">
+                        <h4 class="class-card-heading">Quick access</h4>
+                        <ul class="class-card-to-do-list">
+                            <li class="class-card-to-do-list-item"><a href="" class="card-links">Lecture5.pdf</a></li>
+                            <li class="class-card-to-do-list-item"><a href="" class="card-links">Syllabus.pdf</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Card3 container-->
+                <div class="classcard" id="class-card-3">
+                    <div class="class-card-banner">
+                        <h4 class="grade">
+                            76%
+                        </h4>
+                    </div>
+                    <div class="class-card-segment">
+                        <h3 class="class-card-title">Intro to Operating Systems</h3>
+                        <h4 class="class-card-subtitle">C S 3113</h4>
+                        <p class="class-card-term">Spring 2025</p>
+                    </div>
+                    <div class="class-card-segment class-card-button-tray">
+                        <button class="button-tray-button">
+                            <img src="img/announcements.svg" alt="Home" class="icon">
+                        </button>
+                        <button class="button-tray-button">
+                            <img src="img/assignments.svg" alt="Home" class="icon">
+                        </button>
+                        <button class="button-tray-button">
+                            <img src="img/discussion.svg" alt="Home" class="icon">
+                        </button>
+                        <button class="button-tray-button">
+                            <img src="img/files.svg" alt="Home" class="icon">
+                        </button>
+                    </div>
+                    <div class="class-card-segment">
+                        <h4 class="class-card-heading">To do</h4>
+                        <ul class="class-card-to-do-list">
+                            <li class="class-card-to-do-list-item"><a href="" class="card-links">Assignment 1: due in 2 days</a></li>
+                            <li class="class-card-to-do-list-item"><a href="" class="card-links">Assignment 2: due in 1 week</a></li>
+                        </ul>
+                    </div>
+                    <div class="class-card-segment">
+                        <h4 class="class-card-heading">Quick access</h4>
+                        <ul class="class-card-to-do-list">
+                            <li class="class-card-to-do-list-item"><a href="" class="card-links">Lecture5.pdf</a></li>
+                            <li class="class-card-to-do-list-item"><a href="" class="card-links">Syllabus.pdf</a></li>
+                        </ul>
+                    </div>
+                </div> 
+                <!--Card4 container-->
+                <div class="classcard" id="class-card-4">
+                    <div class="class-card-banner">
+                        <h4 class="grade">
+                            95%
+                        </h4>
+                    </div>
+                    <div class="class-card-segment">
+                        <h3 class="class-card-title">Artificial Intelligence</h3>
+                        <h4 class="class-card-subtitle">C S 4013</h4>
+                        <p class="class-card-term">Spring 2025</p>
+                    </div>
+                    <div class="class-card-segment class-card-button-tray">
+                        <button class="button-tray-button">
+                            <img src="img/announcements.svg" alt="Home" class="icon">
+                        </button>
+                        <button class="button-tray-button">
+                            <img src="img/assignments.svg" alt="Home" class="icon">
+                        </button>
+                        <button class="button-tray-button">
+                            <img src="img/discussion.svg" alt="Home" class="icon">
+                        </button>
+                        <button class="button-tray-button">
+                            <img src="img/files.svg" alt="Home" class="icon">
+                        </button>
+                    </div>
+                    <div class="class-card-segment">
+                        <h4 class="class-card-heading">To do</h4>
+                        <ul class="class-card-to-do-list">
+                            <li class="class-card-to-do-list-item"><a href="" class="card-links">Assignment 1: due in 2 days</a></li>
+                            <li class="class-card-to-do-list-item"><a href="" class="card-links">Assignment 2: due in 1 week</a></li>
+                        </ul>
+                    </div>
+                    <div class="class-card-segment">
+                        <h4 class="class-card-heading">Quick access</h4>
+                        <ul class="class-card-to-do-list">
+                            <li class="class-card-to-do-list-item"><a href="" class="card-links">Lecture5.pdf</a></li>
+                            <li class="class-card-to-do-list-item"><a href="" class="card-links">Syllabus.pdf</a></li>
+                        </ul>
+                    </div>
+                </div>      
             </section> 
         </div>
 
@@ -186,5 +331,6 @@
 
     </div>
     <script src="js/main.js"></script>
+    <script src="js/calendar.js"></script>
 </body>
 </html>

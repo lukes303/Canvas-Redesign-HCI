@@ -1,3 +1,11 @@
+/* Global variables */
+:root {
+    --card1-color: rgb(199, 46, 46);
+    --card2-color: rgb(46, 107, 199);
+    --card3-color: rgb(56, 155, 52);
+    --card4-color: rgb(143, 50, 146);
+}
+
 #dashboardcontainer{
     display: flex;
 	flex-direction: column;
@@ -21,7 +29,7 @@
 .cardcontainer{
 	display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
-    padding-top: 20px;
+    padding-top: 30px;
 	gap: 10px;
     width: 100%;
     box-sizing: border-box;
@@ -101,28 +109,54 @@ body.light-mode .card-links{
 	color: black;
 }
 
+/*Card 1 Styles*/
 #class-card-1 > .class-card-banner{
-	background-color: #ff3737;
+	background-color: var(--card1-color);
 }
 
 #class-card-1 > .class-card-segment > .class-card-title{
-	color: #ff3737;
+	color: var(--card1-color);
 }
 
 #class-card-1 > .class-card-segment > .class-card-heading {
-	color: #ff3737;
+	color: var(--card1-color);
 }
 
+/*Card 2 Styles*/
 #class-card-2 > .class-card-banner{
-	background-color: #37afff;
+	background-color: var(--card2-color);
 }
 
+#class-card-2 > .class-card-segment > .class-card-title{
+	color: var(--card2-color);
+}
 
+#class-card-2 > .class-card-segment > .class-card-heading {
+	color: var(--card2-color);
+}
+
+/*Card 3 Styles*/
 #class-card-3 > .class-card-banner{
-	background-color: #62fa4e;
+	background-color: var(--card3-color);
 }
 
+#class-card-3 > .class-card-segment > .class-card-title{
+	color: var(--card3-color);
+}
 
+#class-card-3 > .class-card-segment > .class-card-heading {
+	color: var(--card3-color);
+}
+
+/*Card 4 Styles*/
 #class-card-4 > .class-card-banner{
-	background-color: #b64ef3;
+	background-color: var(--card4-color);
+}
+
+#class-card-4 > .class-card-segment > .class-card-title{
+	color: var(--card4-color);
+}
+
+#class-card-4 > .class-card-segment > .class-card-heading {
+	color: var(--card4-color);
 }

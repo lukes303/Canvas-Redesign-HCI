@@ -35,10 +35,10 @@ document.getElementById('add-card-button').addEventListener('click', function() 
 });
 
 // Search 
-document.getElementById('search-button').addEventListener('click', function() {
-    const sidebar = document.getElementById('search-sidebar');
-    sidebar.classList.toggle('sidebar-active');
-});
+// document.getElementById('search-button').addEventListener('click', function() {
+//     const sidebar = document.getElementById('search-sidebar');
+//     sidebar.classList.toggle('sidebar-active');
+// });
 
 // Calendar 
 document.getElementById('calendar-button').addEventListener('click', function() {

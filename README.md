@@ -34,4 +34,11 @@ No Dark Mode: Canvas lacks a dark mode. Including it
 can improve accessibility for users who suffer from eye
 strain or light sensitivity.
 
-Project will be built with HTML, CSS, and JavaScript.
+Project will be built with HTML, CSS, JavaScript, and FullCalendar.js
+
+Requirments:
+FullCalendar.js: https://fullcalendar.io/docs/initialize-globals
+
+Download fullcalendar-6.1.15.zip from FullCalendar's website or install with NPM with the command:
+
+npm install fullcalendar
