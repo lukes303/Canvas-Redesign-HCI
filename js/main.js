@@ -22,24 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Open notifications
-document.getElementById('notifications-button').addEventListener('click', function() {
-    const dropdown = document.getElementById('notifications-dropdown');
-    dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
-});
-
-// Open add card
-document.getElementById('add-card-button').addEventListener('click', function() {
-    const dropdown = document.getElementById('add-card-dropdown');
-    dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
-});
-
-// Search 
-// document.getElementById('search-button').addEventListener('click', function() {
-//     const sidebar = document.getElementById('search-sidebar');
-//     sidebar.classList.toggle('sidebar-active');
-// });
-
 // Calendar 
 document.getElementById('calendar-button').addEventListener('click', function() {
     const sidebar = document.getElementById('calendar-sidebar');

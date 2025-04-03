@@ -14,9 +14,9 @@
 }
 
 .header-button-tray{
-	margin-left: auto; /* This pushes the buttons to the right */
+	margin-left: auto;
 	display: flex;
-    gap: 20px; /* Space between buttons */
+    gap: 20px;
 }
 
 #add-card-dropdown{
