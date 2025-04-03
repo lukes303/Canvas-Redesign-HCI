@@ -30,25 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
           console.log('Clicked on: ' + info.dateStr);
       }
     });
-
-    calendar.addEvent({
-      start: '2025-04-02',
-      allDay: true,
-      backgroundColor: '#ff5733', // Custom orange color
-    });
-
-    calendar.addEvent({
-      start: '2025-04-02',
-      allDay: true,
-      backgroundColor: '#ff5733', // Custom orange color
-    });
-
-    calendar.addEvent({
-      start: '2025-04-02',
-      allDay: true,
-      backgroundColor: '#ff5733', // Custom orange color
-    });
-
     calendar.render();
 
   });
