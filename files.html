@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global Stylesheet -->
+    <link href="css/global-style.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="css/files.css" rel="stylesheet" type="text/css">
+
+    <!-- Additional stylesheets -->
+    <link href="css/dashboard.css" rel="stylesheet" type="text/css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Canvas LMS Redesign - Files</title>
+</head>
+
+<body>
+    <div id="root">
+
+        <!-- Navigation -->
+        <nav>
+            <ul class="nav-links-group">
+                <!-- Profile -->
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/profile.svg" alt="Profile" class="icon">
+                    </a>
+                </li>
+                <!-- Dashboard -->
+                <li>
+                    <a href="index.html" class="nav-button">
+                        <img src="img/dash.svg" alt="Home" class="icon">
+                    </a>
+                </li>
+                <!-- Files -->
+                <li>
+                    <a href="files.html" class="nav-button active">
+                        <img src="img/files.svg" alt="Files" class="icon">
+                    </a>
+                </li>
+                <!-- Calendar -->
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/calendar.svg" alt="Calendar" class="icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div id="files-container">
+            <header>
+                <h1 class="heading">Files</h1>
+            </header>
+
+            <!-- File Structure -->
+            <div class="file-structure">
+                <ul class="folder-list">
+                    <li class="folder">
+                        <span class="folder-name">Course Materials</span>
+                        <ul class="file-list">
+                            <li class="file">
+                                <a href="files/syllabus.pdf" target="_blank">
+                                    <img src="img/pdf-icon.svg" alt="PDF Icon" class="file-icon">
+                                    Syllabus.pdf
+                                </a>
+                            </li>
+                            <li class="file">
+                                <a href="files/schedule.xlsx" target="_blank">
+                                    <img src="img/excel-icon.svg" alt="Excel Icon" class="file-icon">
+                                    Schedule.xlsx
+                                </a>
+                            </li>
+                            <li class="file">
+                                <a href="files/lecture1.pptx" target="_blank">
+                                    <img src="img/ppt-icon.svg" alt="PowerPoint Icon" class="file-icon">
+                                    Lecture1.pptx
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="folder">
+                        <span class="folder-name">Assignments</span>
+                        <ul class="file-list">
+                            <li class="file">
+                                <a href="files/assignment1.docx" target="_blank">
+                                    <img src="img/word-icon.svg" alt="Word Icon" class="file-icon">
+                                    Assignment1.docx
+                                </a>
+                            </li>
+                            <li class="file">
+                                <a href="files/assignment2.docx" target="_blank">
+                                    <img src="img/word-icon.svg" alt="Word Icon" class="file-icon">
+                                    Assignment2.docx
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="folder">
+                        <span class="folder-name">Resources</span>
+                        <ul class="file-list">
+                            <li class="file">
+                                <a href="files/research-paper.pdf" target="_blank">
+                                    <img src="img/pdf-icon.svg" alt="PDF Icon" class="file-icon">
+                                    Research-Paper.pdf
+                                </a>
+                            </li>
+                            <li class="file">
+                                <a href="files/reading-material.docx" target="_blank">
+                                    <img src="img/word-icon.svg" alt="Word Icon" class="file-icon">
+                                    Reading-Material.docx
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

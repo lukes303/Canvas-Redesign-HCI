@@ -1,0 +1,51 @@
+/* Navigation Bar */
+#root nav ul{
+    width:97% !important;
+   }
+   
+   
+
+/* Files container */
+#files-container{
+    transform:translatex(62px) translatey(10px);
+    width:2456px;
+    position:absolute;
+    top:0px;
+    z-index:0;
+    max-width:2456px;
+    min-width:0%;
+    padding-left:3%;
+    padding-right:0%;
+   }
+   
+   /* File structure */
+   #root #files-container .file-structure{
+    padding-left:2% !important;
+    padding-top:1% !important;
+   }
+   
+   /* List */
+   .folder-list .folder ul{
+    padding-top:0%;
+   }
+   
+   /* List */
+   #root #files-container .file-structure .folder-list .folder ul{
+    padding-left:1% !important;
+   }
+   
+   /* Folder list */
+   #files-container .file-structure .folder-list{
+    list-style-position:outside;
+    list-style-type:disc;
+    direction:ltr;
+    font-weight:400;
+    line-height:30px;
+   }
+   
+   /* Image */
+   .folder-list a img{
+    padding-right:7px;
+   }
+   
+   
