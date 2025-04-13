@@ -13,6 +13,38 @@
 	width: 100%;
 }
 
+/* Push main container to the right of both sidebars */
+
+
+/* Assignment Section Styling */
+#assignment-sections {
+  margin-top: 25px;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#assignment-sections details {
+  background-color: #2a2a2a;
+  color: white;
+  border-radius: 8px;
+  max-width: 600px;
+  padding: 10px 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#assignment-sections summary {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#assignment-sections ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
 .header-button-tray{
 	margin-left: auto;
 	display: flex;
@@ -22,6 +54,7 @@
 /* Container for the entire course sidebar */
 .course-sidebar {
   position: absolute;             /* Positions sidebar absolutely */
+  margin-left: 25px;
   top: 125px;                      /* Adjust this to sit below your nav */
   left: 80px;                     /* Adjust to sit to the right of your vertical nav */
   width: 220px;                   /* Fixed width for the sidebar */
@@ -87,56 +120,6 @@
   margin-left: 6px;             /* Space from the adjacent text */
 }
 
-body.dark .course-sidebar {
-    background-color: #1e1e1e;
-    border-right: 1px solid #333;
-    box-shadow: 2px 0 5px rgba(255,255,255,0.05);
-}
-
-body.dark .course-sidebar .semester-label {
-    color: #f0f0f0;
-}
-
-body.dark .course-links li a {
-    color: #ddd;
-}
-
-body.dark .course-links li a:hover {
-    background-color: #333;
-}
-
-body.dark .course-links li.active a {
-    background-color: #3399ff;
-    color: white;
-}
-
-body.dark .course-links .badge {
-    background-color: #ff5555;
-}
-
-.cardcontainer{
-	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
-    padding-top: 30px;
-	gap: 10px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.classcard{
-	background-color: rgb(36, 36, 36);;
-	color: white;
-    border-radius: 8px;
-	width: 300px;
-	overflow: hidden;
-	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-body.light-mode .classcard{
-	background-color: white;
-	color:black;
-}
 
 .button-tray-button{
 	background: none;
@@ -144,30 +127,8 @@ body.light-mode .classcard{
     cursor: pointer;
 }
 
-.button-tray-button img{
-	width: 24px;
-    height: 24px;
-}
 
-.class-card-to-do-list{
-	list-style: none;
-	padding: 0;
-}
 
-.class-card-to-do-list-item{
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-.grade{
-	padding: 15px;
-	color: white;
-}
-
-.card-links{
-	color: white;
-  	text-decoration: none;
-}
 /* Light mode overrides for sidebar */
 body.light-mode .course-sidebar {
     background-color: #f7f7f7;

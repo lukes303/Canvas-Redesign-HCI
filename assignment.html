@@ -17,10 +17,11 @@
     <!--Libraries-->
     <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
-    
+
     <!-- Title -->
-    <title>Canvas LMS Redesign - Dashboard</title>
+    <title>Canvas LMS Redesign - Assignments</title>
 </head>
+
 <body>
     <div id="root">
 
@@ -52,25 +53,25 @@
                         <img src="img/groups.svg" alt="Groups" class="icon">
                     </a>
                 </li>
-                <!-- Calendar -->                
+                <!-- Calendar -->
                 <li>
                     <button class="nav-button" id="calendar-button">
                         <img src="img/calendar.svg" alt="Calendar" class="icon">
                     </button>
                 </li>
-                <!-- Inbox -->                
+                <!-- Inbox -->
                 <li>
                     <a href="" class="nav-button">
                         <img src="img/inbox.svg" alt="Inbox" class="icon">
                     </a>
                 </li>
-                <!-- History -->                
+                <!-- History -->
                 <li>
                     <a href="" class="nav-button">
                         <img src="img/history.svg" alt="History" class="icon">
                     </a>
                 </li>
-                <!-- Help -->                
+                <!-- Help -->
                 <li>
                     <a href="" class="nav-button">
                         <img src="img/help.svg" alt="Help" class="icon">
@@ -80,7 +81,7 @@
         </nav>
 
         <!--Calendar Sidebar-->
-        <div class = "sidebar" id = "calendar-sidebar">
+        <div class="sidebar" id="calendar-sidebar">
 
             <h2>
                 Calendar
@@ -89,6 +90,7 @@
             <div id='calendar'></div>
 
         </div>
+
 
         <!-- Course Sidebar (Canvas-style) -->
         <aside class="course-sidebar">
@@ -102,9 +104,16 @@
                 <li><a href="#">Grades <span class="badge">24</span></a></li>
             </ul>
         </aside>
+        
+
+        
+          
+
+
+
 
         <!--Main dashoard container-->
-        <div id = "assignmentcontainer">
+        <div id="assignmentcontainer">
 
             <!--Header-->
             <header>
@@ -122,16 +131,39 @@
                 </div>
 
                 <!--Container for settings drop-down-->
-                <div class = "dropdown-menu" id = "settings-dropdown">
-                    <button class= "dropdown-button" id = "darkmode-button">
+                <div class="dropdown-menu" id="settings-dropdown">
+                    <button class="dropdown-button" id="darkmode-button">
                         Dark mode
                     </button>
                 </div>
 
-            
+
 
             </header>
-        </div>
+            <div id="assignment-sections">
+                <details>
+                  <summary>All Assignments</summary>
+                  <ul>
+                    <li>Assignment 1</li>
+                    <li>Assignment 2</li>
+                  </ul>
+                </details>
+              
+                <details>
+                  <summary>Upcoming</summary>
+                  <ul>
+                    <li>Assignment 3</li>
+                  </ul>
+                </details>
+              
+                <details>
+                  <summary>Past Due</summary>
+                  <ul>
+                    <li>Assignment 4</li>
+                  </ul>
+                </details>
+              </div>
+
 
 
         <!--
@@ -151,4 +183,5 @@
     <script src="js/main.js"></script>
     <script src="js/calendar.js"></script>
 </body>
+
 </html>
