@@ -1,0 +1,206 @@
+/* Global variables */
+:root {
+    --card1-color: rgb(199, 46, 46);
+    --card2-color: rgb(46, 107, 199);
+    --card3-color: rgb(56, 155, 52);
+    --card4-color: rgb(143, 50, 146);
+}
+
+#assignmentcontainer{
+    display: flex;
+	flex-direction: column;
+	padding-left: 50px;
+	width: 100%;
+}
+
+.header-button-tray{
+	margin-left: auto;
+	display: flex;
+    gap: 20px;
+}
+
+/* Container for the entire course sidebar */
+.course-sidebar {
+  position: absolute;             /* Positions sidebar absolutely */
+  top: 125px;                      /* Adjust this to sit below your nav */
+  left: 80px;                     /* Adjust to sit to the right of your vertical nav */
+  width: 220px;                   /* Fixed width for the sidebar */
+  background-color: #1e1e1e;      /* Dark background, similar to Canvas */
+  border-radius: 8px;             /* Rounded corners */
+  padding: 16px 0;               /* Vertical padding; links will provide their own horizontal padding */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);  /* Subtle shadow for depth */
+  color: #bbb;                    /* Default text color */
+  z-index: 2;                     /* Ensure it stacks above other elements if needed */
+}
+
+/* Styling for the semester label at the top of the sidebar */
+.course-sidebar .semester-label {
+  font-style: italic;
+  font-size: 0.85em;
+  padding-left: 20px;             /* Indent to align with list items */
+  margin-bottom: 12px;
+}
+
+/* Remove default list bullet styling */
+.course-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Spacing for each list item */
+.course-links li {
+  margin: 8px 0;
+}
+
+/* Link styling */
+.course-links a {
+  display: block;               /* Makes the entire area clickable */
+  padding: 10px 15px;           /* Internal spacing for legibility */
+  text-decoration: none;        /* Remove default underlines */
+  color: #bbb;                  /* Light gray text */
+  transition: background-color 0.2s, color 0.2s;  /* Smooth hover transitions */
+  border-left: 4px solid transparent;  /* Placeholder for active state indicator */
+}
+
+/* Hover state for links */
+.course-links a:hover {
+  background-color: #2a2a2a;     /* Slightly darker background on hover */
+  color: #fff;                 /* White text on hover */
+}
+
+/* Active link styling: adjusts the active item to stand out */
+.course-links .active a {
+  font-weight: bold;
+  color: #fff;                  /* White text for active link */
+  background-color: #2a2a2a;     /* Background change to signal active state */
+  border-left-color: #fff;      /* White left border indicator */
+}
+
+/* Badge styling, this is optional for grade notifications */
+.badge {
+  background-color: #c00;       /* Red badge background */
+  color: #fff;                  /* White badge text */
+  padding: 2px 6px;             /* Compact padding */
+  border-radius: 10px;          /* Rounded badge shape */
+  font-size: 0.75em;
+  margin-left: 6px;             /* Space from the adjacent text */
+}
+
+body.dark .course-sidebar {
+    background-color: #1e1e1e;
+    border-right: 1px solid #333;
+    box-shadow: 2px 0 5px rgba(255,255,255,0.05);
+}
+
+body.dark .course-sidebar .semester-label {
+    color: #f0f0f0;
+}
+
+body.dark .course-links li a {
+    color: #ddd;
+}
+
+body.dark .course-links li a:hover {
+    background-color: #333;
+}
+
+body.dark .course-links li.active a {
+    background-color: #3399ff;
+    color: white;
+}
+
+body.dark .course-links .badge {
+    background-color: #ff5555;
+}
+
+.cardcontainer{
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+    padding-top: 30px;
+	gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.classcard{
+	background-color: rgb(36, 36, 36);;
+	color: white;
+    border-radius: 8px;
+	width: 300px;
+	overflow: hidden;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+body.light-mode .classcard{
+	background-color: white;
+	color:black;
+}
+
+.button-tray-button{
+	background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-tray-button img{
+	width: 24px;
+    height: 24px;
+}
+
+.class-card-to-do-list{
+	list-style: none;
+	padding: 0;
+}
+
+.class-card-to-do-list-item{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.grade{
+	padding: 15px;
+	color: white;
+}
+
+.card-links{
+	color: white;
+  	text-decoration: none;
+}
+/* Light mode overrides for sidebar */
+body.light-mode .course-sidebar {
+    background-color: #f7f7f7;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .course-sidebar .semester-label {
+    color: #666;
+}
+
+body.light-mode .course-links a {
+    color: #333;
+}
+
+body.light-mode .course-links a:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+body.light-mode .course-links .active a {
+    background-color: #d0d0d0;
+    color: #000;
+    border-left-color: #000;
+}
+
+body.light-mode .course-links .badge {
+    background-color: #d32f2f;
+    color: white;
+}
+
+
+body.light-mode .card-links{
+	color: black;
+}
+

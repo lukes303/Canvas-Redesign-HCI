@@ -9,7 +9,7 @@
 
 
     <!-- Additional stylesheets -->
-    <link href="css/dashboard.css" rel="stylesheet" type="text/css">
+    <link href="css/assignments.css" rel="stylesheet" type="text/css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -90,26 +90,31 @@
 
         </div>
 
+        <!-- Course Sidebar (Canvas-style) -->
+        <aside class="course-sidebar">
+            <div class="semester-label">Spring 2025</div>
+            <ul class="course-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Files</a></li>
+                <li class="active"><a href="#">Assignments</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Grades <span class="badge">24</span></a></li>
+            </ul>
+        </aside>
+
         <!--Main dashoard container-->
-        <div id = "dashboardcontainer">
+        <div id = "assignmentcontainer">
 
             <!--Header-->
             <header>
 
                 <h1 class="heading">
-                    Dashboard
+                    Assignments
                 </h1>
 
                 <!--Header Buttons-->
                 <div class="header-button-tray">
-                    <!--Add card button-->
-                    <button class="header-button" id = "add-card-button">
-                        <img src="img/add.svg" alt="Home" class="icon">
-                    </button>
-                    <!--Notification button-->
-                    <button class="header-button" id="notifications-button">
-                        <img src="img/notifications.svg" alt="Home" class="icon">
-                    </button>
                     <!--Settings Buttons-->
                     <button class="header-button" id="settings-button">
                         <img src="img/header-settings.svg" alt="Home" class="icon">
@@ -123,8 +128,11 @@
                     </button>
                 </div>
 
+            
+
             </header>
         </div>
+
 
         <!--
         <a href="https://www.vecteezy.com/free-vector/book-icon">Book Icon Vectors by Vecteezy</a>
