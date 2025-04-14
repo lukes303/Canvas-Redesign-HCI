@@ -27,3 +27,22 @@ document.getElementById('calendar-button').addEventListener('click', function() 
     const sidebar = document.getElementById('calendar-sidebar');
     sidebar.classList.toggle('sidebar-active');
 });
+
+// Quick Access - Delete button functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Set up event listeners for all delete buttons
+    const deleteButtons = document.querySelectorAll('.class-card-file-item-delete');
+    
+    deleteButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            // Prevent the click from propagating to parent elements
+            e.stopPropagation();
+            
+            // Remove the parent list item
+            const listItem = this.closest('.class-card-file-item');
+            if (listItem) {
+                listItem.remove();
+            }
+        });
+    });
+});
