@@ -55,12 +55,21 @@ body.light-mode .classcard{
     width: 100%;
 }
 
+.class-card-left-padding {
+	padding-left: 15px;
+}
+
+.class-card-right-padding {
+	padding-right: 15px;
+}
+
 .class-card-subtitle {
 	padding-top: 2px;
 }
 
 .class-card-segment {
-	padding: 15px;
+	padding-top: 10px;
+	padding-bottom: 5px;
 }
 
 .class-card-term {
@@ -88,12 +97,73 @@ body.light-mode .classcard{
 .class-card-to-do-list{
 	list-style: none;
 	padding: 0;
+	width: 100%;
+	width: 100%;
 }
 
 .class-card-to-do-list-item{
+	display: flex;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.class-card-to-do-list-item:hover{
+	background-color: rgb(15, 15, 15);
+}
+
+body.light-mode .class-card-to-do-list-item:hover{
+	background-color: rgb(204, 204, 204);
+}
+
+.class-card-to-do-list-item p{
+	margin-left: auto;
+  	margin-right: 0;
+}
+
+.class-card-file-item{
+	display: flex;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode .class-card-file-item:hover{
+	background-color: rgb(204, 204, 204);
+}
+
+.class-card-file-item:hover{
+	background-color: rgb(15, 15, 15);
+}
+
+.class-card-file-item-delete{
+	padding: 0px;
+	margin-left: auto;
+	margin-right: 15px;
+	background-color: #ff5252;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.class-card-file-item:hover .class-card-file-item-delete {
+    display: block;
+}
+
+.class-card-file-item-delete:hover {
+    opacity: 1;
+}
+
+
 
 .grade{
 	padding: 15px;
