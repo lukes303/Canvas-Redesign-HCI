@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global Stylesheet -->
+    <link href="css/global-style.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="css/calendar.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Additional stylesheets -->
+    <link href="css/files2.css" rel="stylesheet" type="text/css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Libraries-->
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
+    
+    <!-- Title -->
+    <title>Canvas LMS Redesign - Dashboard</title>
+</head>
+<body>
+    <div id="root">
+
+        <!-- Navigation -->
+        <nav>
+            <ul class="nav-links-group">
+                <!-- Profile -->
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/profile.svg" alt="Profile" class="icon">
+                    </a>
+                </li>
+                <!-- Dashboard -->
+                <li>
+                    <a href="index.html" class="nav-button">
+                        <img src="img/dash.svg" alt="Home" class="icon">
+                    </a>
+                </li>
+                <!-- Courses -->
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/courses.svg" alt="Courses" class="icon">
+                    </a>
+                </li>
+
+                <!-- Groups -->
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/groups.svg" alt="Groups" class="icon">
+                    </a>
+                </li>
+                <!-- Calendar -->                
+                <li>
+                    <button class="nav-button" id="calendar-button">
+                        <img src="img/calendar.svg" alt="Calendar" class="icon">
+                    </button>
+                </li>
+                <!-- Inbox -->                
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/inbox.svg" alt="Inbox" class="icon">
+                    </a>
+                </li>
+                <!-- History -->                
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/history.svg" alt="History" class="icon">
+                    </a>
+                </li>
+                <!-- Help -->                
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/help.svg" alt="Help" class="icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Calendar Sidebar-->
+        <div class = "sidebar" id = "calendar-sidebar">
+
+            <h2>
+                Calendar
+            </h2>
+
+            <div id='calendar'></div>
+
+        </div>
+
+        <!-- Course Sidebar (Canvas-style) -->
+        <aside class="course-sidebar">
+            <div class="semester-label">Spring 2025</div>
+            <ul class="course-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li class="active"><a href="#">Files</a></li>
+                <li><a href="#">Assignments</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Grades <span class="badge">24</span></a></li>
+            </ul>
+        </aside>
+
+        <!--Main dashoard container-->
+        <div id = "assignmentcontainer">
+
+            <!--Header-->
+            <header>
+
+                <h1 class="heading">
+                    Files
+                </h1>
+
+                <!--Header Buttons-->
+                <div class="header-button-tray">
+                    <!--Settings Buttons-->
+                    <button class="header-button" id="settings-button">
+                        <img src="img/header-settings.svg" alt="Home" class="icon">
+                    </button>
+                </div>
+
+                <!--Container for settings drop-down-->
+                <div class = "dropdown-menu" id = "settings-dropdown">
+                    <button class= "dropdown-button" id = "darkmode-button">
+                        Dark mode
+                    </button>
+                </div>
+
+            
+
+            </header>
+
+            <!-- File Structure -->
+            <div id="files-container">
+                <div class="file-structure">
+                    <ul class="folder-list">
+                        <li class="folder">
+                            <span class="folder-name">Course Materials</span>
+                            <ul class="file-list">
+                                <li class="file">
+                                    <a href="">
+                                        <img src="img/pdf-icon.svg" alt="PDF Icon" class="file-icon">
+                                        Syllabus.pdf
+                                    </a>
+                                </li>
+                                <li class="file">
+                                    <a href="">
+                                        <img src="img/excel-icon.svg" alt="Excel Icon" class="file-icon">
+                                        Schedule.xlsx
+                                    </a>
+                                </li>
+                                <li class="file">
+                                    <a href="">
+                                        <img src="img/ppt-icon.svg" alt="PowerPoint Icon" class="file-icon">
+                                        Lecture1.pptx
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="folder">
+                            <span class="folder-name">Assignments</span>
+                            <ul class="file-list">
+                                <li class="file">
+                                    <a href="">
+                                        <img src="img/word-icon.svg" alt="Word Icon" class="file-icon">
+                                        Assignment1.docx
+                                    </a>
+                                </li>
+                                <li class="file">
+                                    <a href="">
+                                        <img src="img/word-icon.svg" alt="Word Icon" class="file-icon">
+                                        Assignment2.docx
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="folder">
+                            <span class="folder-name">Resources</span>
+                            <ul class="file-list">
+                                <li class="file">
+                                    <a href="">
+                                        <img src="img/pdf-icon.svg" alt="PDF Icon" class="file-icon">
+                                        Research-Paper.pdf
+                                    </a>
+                                </li>
+                                <li class="file">
+                                    <a href="">
+                                        <img src="img/word-icon.svg" alt="Word Icon" class="file-icon">
+                                        Reading-Material.docx
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <!--
+        <a href="https://www.vecteezy.com/free-vector/book-icon">Book Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/people-icon">People Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/thumbs-up-thumbs-down">Thumbs Up Thumbs Down Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/abstract">Abstract Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/megaphone-icon">Megaphone Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/notebook-icon">Notebook Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/text-bubble-icon">Text Bubble Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/illustration">Illustration Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/clock-icon">Clock Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/plus-icon">Plus Icon Vectors by Vecteezy</a>
+        -->
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/calendar.js"></script>
+</body>
+</html>
