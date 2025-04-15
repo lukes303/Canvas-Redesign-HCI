@@ -211,10 +211,15 @@ body.light-mode .card-links{
     background-color: #242424;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin-top: 25px;
     padding-left:20px;
-    margin-left:232px;
-    width:2082px;
+    margin-left:260px;
+    margin-right:1000px;
+}
+
+body.light-mode #files-container {
+    background-color: #f7f7f7;
+    color: #333;
 }
 
 .file-structure {
@@ -237,6 +242,10 @@ body.light-mode .card-links{
     margin-bottom: 10px;
     display: block;
     color: white;
+}
+
+body.light-mode .folder-name {
+    color: #000;
 }
 
 .file-list {
@@ -265,7 +274,24 @@ body.light-mode .card-links{
     border-radius: 4px;
 }
 
+body.light-mode .file a {
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+body.light-mode .file a:hover {
+    color: #000;
+    background-color: #e0e0e0;
+}
+
 .file-icon {
     width: 20px;
     height: 20px;
+    fill: white;
+    transform: scale(3);
+    transform-origin: center;
+}
+
+body.light-mode .file-icon {
+    fill: black;
 }
