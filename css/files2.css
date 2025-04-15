@@ -207,7 +207,7 @@ body.light-mode .card-links{
 
 /* File Structure */
 #files-container {
-    position: absolute;
+    position: absolute; /* Absolute positioning to place it manually */
     padding: 20px;
     background-color: #242424;
     border-radius: 8px;
@@ -219,13 +219,13 @@ body.light-mode .card-links{
     width: 50%;
 }
 
-#files-container .icon {
-    width: 64px;
+#files-container .icon { /* Override files icon to change size */
+    width: 64px; 
     height: 64px;
     margin: 0;
 }
 
-body.light-mode #files-container {
+body.light-mode #files-container { /* Light mode styles for the file structure */
     background-color: #f7f7f7;
     color: #333;
 }
