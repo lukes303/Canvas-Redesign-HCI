@@ -218,6 +218,12 @@ body.light-mode .card-links{
     z-index: 2;
 }
 
+#files-container .icon {
+    width: 64px;
+    height: 64px;
+    margin: 0;
+}
+
 body.light-mode #files-container {
     background-color: #f7f7f7;
     color: #333;
