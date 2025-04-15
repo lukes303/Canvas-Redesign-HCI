@@ -1,20 +1,9 @@
-/* Global variables */
-:root {
-    --card1-color: rgb(199, 46, 46);
-    --card2-color: rgb(46, 107, 199);
-    --card3-color: rgb(56, 155, 52);
-    --card4-color: rgb(143, 50, 146);
-}
-
 #assignmentcontainer{
     display: flex;
 	flex-direction: column;
 	padding-left: 50px;
 	width: 100%;
 }
-
-/* Push main container to the right of both sidebars */
-
 
 /* Assignment Section Styling */
 #assignment-sections {
@@ -23,6 +12,12 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.all-assignments {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 #assignment-sections details {
@@ -40,33 +35,77 @@
   cursor: pointer;
 }
 
-#assignment-sections ul {
-  margin-top: 10px;
-  padding-left: 20px;
+#assignment-sections .assignment-item {
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+  border-radius: 6px;
+  margin-top: 0.75rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #444;
 }
 
+#assignment-sections ul {
+  margin-top: 10px;
+}
+
+.assignment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--box-bg, #2a2a2a);
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+  font-family: var(--font-family, sans-serif);
+}
+
+.assignment-item .assignment-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #f0f0f0;
+}
+
+
+.assignment-item .assignment-due {
+  font-size: 0.9rem;
+  color: #b0b0b0;  
+}
+
+.assignment-item .assignment-grade {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--grade-color, #2a9d8f);  /* Grade Color */
+}
+
+
+/* Light/Dark Mode button positon */
 .header-button-tray{
 	margin-left: auto;
 	display: flex;
     gap: 20px;
 }
 
-/* Container for the entire course sidebar */
+/* Container for the course sidebar */
 .course-sidebar {
-  position: absolute;             /* Positions sidebar absolutely */
+  position: absolute;             
   margin-left: 25px;
-  top: 125px;                      /* Adjust this to sit below your nav */
-  left: 80px;                     /* Adjust to sit to the right of your vertical nav */
-  width: 220px;                   /* Fixed width for the sidebar */
-  background-color: #1e1e1e;      /* Dark background, similar to Canvas */
-  border-radius: 8px;             /* Rounded corners */
-  padding: 16px 0;               /* Vertical padding; links will provide their own horizontal padding */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);  /* Subtle shadow for depth */
-  color: #bbb;                    /* Default text color */
-  z-index: 2;                     /* Ensure it stacks above other elements if needed */
+  top: 125px;                      
+  left: 80px;                     
+  width: 220px;                   
+  background-color: #1e1e1e;      
+  border-radius: 8px;             
+  padding: 16px 0;               
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);  
+  color: #bbb;                    
+  z-index: 2;                     
+  
 }
 
-/* Styling for the semester label at the top of the sidebar */
+/* Semester Label Side Bar*/
 .course-sidebar .semester-label {
   font-style: italic;
   font-size: 0.85em;
@@ -88,48 +127,39 @@
 
 /* Link styling */
 .course-links a {
-  display: block;               /* Makes the entire area clickable */
-  padding: 10px 15px;           /* Internal spacing for legibility */
-  text-decoration: none;        /* Remove default underlines */
-  color: #bbb;                  /* Light gray text */
-  transition: background-color 0.2s, color 0.2s;  /* Smooth hover transitions */
-  border-left: 4px solid transparent;  /* Placeholder for active state indicator */
+  display: block;               
+  padding: 10px 15px;           
+  text-decoration: none;        
+  color: #bbb;                  
+  transition: background-color 0.2s, color 0.2s;  /* Hover transitions */
+  border-left: 4px solid transparent;  
 }
 
-/* Hover state for links */
+/* Hover changes for links */
 .course-links a:hover {
-  background-color: #2a2a2a;     /* Slightly darker background on hover */
-  color: #fff;                 /* White text on hover */
+  background-color: #2a2a2a;     
+  color: #fff;                 
 }
 
-/* Active link styling: adjusts the active item to stand out */
+/* Active link styling*/
 .course-links .active a {
   font-weight: bold;
-  color: #fff;                  /* White text for active link */
-  background-color: #2a2a2a;     /* Background change to signal active state */
-  border-left-color: #fff;      /* White left border indicator */
+  color: #fff;                  
+  background-color: #2a2a2a;     
+  border-left-color: #fff;      
 }
 
-/* Badge styling, this is optional for grade notifications */
+/* Badge stylingfor grade notifications */
 .badge {
-  background-color: #c00;       /* Red badge background */
-  color: #fff;                  /* White badge text */
-  padding: 2px 6px;             /* Compact padding */
-  border-radius: 10px;          /* Rounded badge shape */
+  background-color: #c00;       
+  color: #fff;                  
+  padding: 2px 6px;             
+  border-radius: 10px;          
   font-size: 0.75em;
-  margin-left: 6px;             /* Space from the adjacent text */
+  margin-left: 6px;             
 }
 
-
-.button-tray-button{
-	background: none;
-    border: none;
-    cursor: pointer;
-}
-
-
-
-/* Light mode overrides for sidebar */
+/* Everything bellow is adaptive changes for lightmode */
 body.light-mode .course-sidebar {
     background-color: #f7f7f7;
     color: #333;
@@ -160,8 +190,36 @@ body.light-mode .course-links .badge {
     color: white;
 }
 
+body.light-mode #assignment-sections details {
+    background-color: #f7f7f7;  
+    color: #333;                
+    border: 1px solid #ddd;
+}
+
+body.light-mode #assignment-sections .assignment-item {
+    background-color: #ffffff;  
+    color: #333;                
+    border: 1px solid #ddd;     
+}
+
+body.light-mode #assignment-sections .assignment-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333; 
+}
+
+body.light-mode #assignment-sections .assignment-due {
+    font-size: 0.9rem;
+    color: #666;  
+    margin-top: 4px;
+}
+
+body.light-mode #assignment-sections .assignment-grade {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #2a9d8f;  
+}
 
 body.light-mode .card-links{
 	color: black;
 }
-
