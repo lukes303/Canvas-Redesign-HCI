@@ -216,6 +216,7 @@ body.light-mode .card-links{
     margin-left: 240px;
     flex: 1;
     z-index: 2;
+    width: 50%;
 }
 
 #files-container .icon {
@@ -263,6 +264,8 @@ body.light-mode .folder-name {
 
 .file {
     margin-bottom: 10px;
+    display: flex;
+    width: 30%;
 }
 
 .file a {
@@ -279,6 +282,21 @@ body.light-mode .folder-name {
     background-color: #333;
     padding: 5px;
     border-radius: 4px;
+}
+
+.add-button{
+    height: 25%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+body.light-mode .add-button{
+    background-color: rgb(15,15,15);
+    color: white;
 }
 
 body.light-mode .file a {
