@@ -8,10 +8,10 @@
 
 #assignmentcontainer{
     display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	padding-left: 50px;
 	width: 100%;
-    transform:translatex(0px) translatey(0px);
+    box-sizing: border-box;
 }
 
 .header-button-tray{
@@ -207,14 +207,15 @@ body.light-mode .card-links{
 
 /* File Structure */
 #files-container {
+    position: absolute;
     padding: 20px;
     background-color: #242424;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 25px;
-    padding-left:20px;
-    margin-left:260px;
-    margin-right:1000px;
+    margin-top: 125px;
+    margin-left: 240px;
+    flex: 1;
+    z-index: 2;
 }
 
 body.light-mode #files-container {
@@ -287,11 +288,7 @@ body.light-mode .file a:hover {
 .file-icon {
     width: 20px;
     height: 20px;
-    fill: white;
+    fill: currentColor;
     transform: scale(3);
     transform-origin: center;
-}
-
-body.light-mode .file-icon {
-    fill: black;
 }
