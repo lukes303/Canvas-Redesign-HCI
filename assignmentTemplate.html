@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global Stylesheet -->
+    <link href="css/global-style.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="css/calendar.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Page Specfic Sheet -->
+    <link href="css/assignmentsTemplate.css" rel="stylesheet" type="text/css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Libraries for Calander Bar-->
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
+
+    <!-- Title -->
+    <title>Canvas LMS Redesign - assignmentsTemplate</title>
+</head>
+
+<body>
+    <div id="root">
+
+        <!-- Navigation -->
+        <nav>
+            <ul class="nav-links-group">
+                <!-- Profile -->
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/profile.svg" alt="Profile" class="icon">
+                    </a>
+                </li>
+                <!-- Dashboard -->
+                <li>
+                    <a href="index.html" class="nav-button">
+                        <img src="img/dash.svg" alt="Home" class="icon">
+                    </a>
+                </li>
+                <!-- Courses -->
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/courses.svg" alt="Courses" class="icon">
+                    </a>
+                </li>
+
+                <!-- Groups -->
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/groups.svg" alt="Groups" class="icon">
+                    </a>
+                </li>
+                <!-- Calendar -->
+                <li>
+                    <button class="nav-button" id="calendar-button">
+                        <img src="img/calendar.svg" alt="Calendar" class="icon">
+                    </button>
+                </li>
+                <!-- Inbox -->
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/inbox.svg" alt="Inbox" class="icon">
+                    </a>
+                </li>
+                <!-- History -->
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/history.svg" alt="History" class="icon">
+                    </a>
+                </li>
+                <!-- Help -->
+                <li>
+                    <a href="" class="nav-button">
+                        <img src="img/help.svg" alt="Help" class="icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Calendar Sidebar-->
+        <div class="sidebar" id="calendar-sidebar">
+
+            <h2>
+                Calendar
+            </h2>
+
+            <div id='calendar'></div>
+
+        </div>
+
+
+        <!-- Course Sidebar -->
+
+        
+        <aside class="course-sidebar">
+            <div class="semester-label">Spring 2025</div>
+            <ul class="course-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="files2.html">Files</a></li>
+                <li><a href="assignment.html">Assignments</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Grades <span class="badge">24</span></a></li>
+            </ul>
+        </aside>
+        
+        
+
+        <!--Main Assignment container-->
+        <div id="assignmentcontainer">
+          
+          
+            <!--Header-->
+            <header>
+                <h1 class="heading">
+                    Assignment 1: Introduction to Algorithms
+                </h1>
+
+                <!--Header Buttons-->
+                <div class="header-button-tray">
+                    <!--Settings Buttons-->
+                    <button class="header-button" id="settings-button">
+                        <img src="img/header-settings.svg" alt="Home" class="icon">
+                    </button>
+                </div>
+
+                <!--Container for settings drop-down-->
+                <div class="dropdown-menu" id="settings-dropdown">
+                    <button class="dropdown-button" id="darkmode-button">
+                        Dark mode
+                    </button>
+                </div>
+            
+
+            </header>
+            <div id="assignment-detail">
+              <div class="assignment-meta">
+                <div>
+                  <span class="assignment-label">Due:</span>
+                  <span class="assignment-value">April 19, 2025 at 11:59 PM</span>
+                </div>
+                <div>
+                  <span class="assignment-label">Points:</span>
+                  <span class="assignment-value">100pts</span>
+                </div>
+                <div>
+                  <span class="assignment-label">Submission Type:</span>
+                  <span class="assignment-value">Online Upload</span>
+                </div>
+                <div>
+                  <span class="assignment-label">Available Until:</span>
+                  <span class="assignment-value">April 21, 2025</span>
+                </div>
+              </div>  
+              
+              <div class="button-position">
+                <button class="highlight-button">Submit Assignment</button>
+              </div> 
+
+
+              
+            </div>
+            <div id="assignment-detail-info">
+              <div>
+                <span class="assignment-label">Assignment Details:</span>
+                <span class="assignment-value">This section details your first assignment for the class.</span>
+              </div>  
+            </div>  
+            
+
+
+        <!--
+        <a href="https://www.vecteezy.com/free-vector/book-icon">Book Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/people-icon">People Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/thumbs-up-thumbs-down">Thumbs Up Thumbs Down Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/abstract">Abstract Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/megaphone-icon">Megaphone Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/notebook-icon">Notebook Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/text-bubble-icon">Text Bubble Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/illustration">Illustration Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/clock-icon">Clock Icon Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/plus-icon">Plus Icon Vectors by Vecteezy</a>
+        -->
+
+    </div>
+
+    
+    <script src="js/main.js"></script>
+    <script src="js/calendar.js"></script>
+</body>
+
+</html>
