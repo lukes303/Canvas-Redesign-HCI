@@ -1,12 +1,4 @@
-/* Global variables */
-:root {
-    --card1-color: rgb(199, 46, 46);
-    --card2-color: rgb(46, 107, 199);
-    --card3-color: rgb(56, 155, 52);
-    --card4-color: rgb(143, 50, 146);
-}
-
-#assignmentcontainer{
+#filecontainer{
     display: flex;
 	flex-direction: row;
 	padding-left: 50px;
@@ -23,15 +15,15 @@
 /* Container for the entire course sidebar */
 .course-sidebar {
   position: absolute;             /* Positions sidebar absolutely */
-  top: 125px;                      /* Adjust this to sit below your nav */
-  left: 105px;                     /* Adjust to sit to the right of your vertical nav */
-  width: 220px;                   /* Fixed width for the sidebar */
-  background-color: #1e1e1e;      /* Dark background, similar to Canvas */
-  border-radius: 8px;             /* Rounded corners */
-  padding: 16px 0;               /* Vertical padding; links will provide their own horizontal padding */
+  top: 125px;                     
+  left: 105px;                     
+  width: 220px;                   
+  background-color: #1e1e1e;     
+  border-radius: 8px;             
+  padding: 16px 0;               
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);  /* Subtle shadow for depth */
   color: #bbb;                    /* Default text color */
-  z-index: 2;                     /* Ensure it stacks above other elements if needed */
+  z-index: 2;                     
 }
 
 /* Styling for the semester label at the top of the sidebar */
@@ -61,7 +53,7 @@
   text-decoration: none;        /* Remove default underlines */
   color: #bbb;                  /* Light gray text */
   transition: background-color 0.2s, color 0.2s;  /* Smooth hover transitions */
-  border-left: 4px solid transparent;  /* Placeholder for active state indicator */
+  border-left: 4px solid transparent; 
 }
 
 /* Hover state for links */
@@ -83,9 +75,9 @@
   background-color: #c00;       /* Red badge background */
   color: #fff;                  /* White badge text */
   padding: 2px 6px;             /* Compact padding */
-  border-radius: 10px;          /* Rounded badge shape */
+  border-radius: 10px;          
   font-size: 0.75em;
-  margin-left: 6px;             /* Space from the adjacent text */
+  margin-left: 6px;            
 }
 
 body.dark .course-sidebar {
