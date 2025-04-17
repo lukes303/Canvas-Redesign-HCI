@@ -25,7 +25,7 @@
 <body>
     <div id="root">
 
-        <!-- Navigation -->
+        <!-- Site Wide Navigation -->
         <nav>
             <ul class="nav-links-group">
                 <!-- Profile -->
@@ -82,17 +82,15 @@
 
         <!--Calendar Sidebar-->
         <div class="sidebar" id="calendar-sidebar">
-
             <h2>
                 Calendar
             </h2>
-
             <div id='calendar'></div>
-
         </div>
 
 
         <!-- Course Sidebar -->
+        <!-- Allows navigation to other coruse pages -->
         <aside class="course-sidebar">
             <div class="semester-label">Spring 2025</div>
             <ul class="course-links">
@@ -111,6 +109,7 @@
 
 
         <!--Main Assignment container-->
+        <!--Contains main page elements including dropdown and the header for the page-->
         <div id="assignmentcontainer">
 
             <!--Header-->
@@ -122,7 +121,7 @@
 
                 <!--Header Buttons-->
                 <div class="header-button-tray">
-                    <!--Settings Buttons-->
+                    <!--Settings Buttons for Dark Mode-->
                     <button class="header-button" id="settings-button">
                         <img src="img/header-settings.svg" alt="Home" class="icon">
                     </button>
@@ -138,6 +137,8 @@
 
 
             </header>
+
+            <!-- Expanable menus for different assignment grouping-->
             <div id="assignment-sections">
                 <details>
                   <summary>All Assignments</summary>
@@ -163,6 +164,7 @@
                       </ul>
                       
                       <ul>
+                        <a href="assignmentTemplate.html" class="assignment-link">
                         <li class="assignment-item">
                           <div class="assignment-text">
                             <div class="assignment-title">Assignment 1: Introduction to Algorithms</div>
@@ -170,6 +172,7 @@
                           </div>
                           <div class="assignment-grade">No Submission</div>
                         </li>
+                      </a>
                       </ul>
                   </ul>
                 </details>
