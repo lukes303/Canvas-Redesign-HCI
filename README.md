@@ -41,4 +41,11 @@ FullCalendar.js: https://fullcalendar.io/docs/initialize-globals
 
 Download fullcalendar-6.1.15.zip from FullCalendar's website or install with NPM with the command:
 
-npm install fullcalendar
+# Running the site
+### Option 1: View online
+Visit jwrodriguez.github.io to see a live view
+### Option 2: Install and run locally.
+Step 1: Use Windows PowerShell or linux to install FullCalendar library by running **npm install fullcalendar.**
+Step 2: Clone the repository using git clone https://github.com/lukes303/Canvas-Redesign-HCI.git.
+Step 3: Open the cloned folder and run index.html in your favorite browser
+Step 4: The site is now working and open!
