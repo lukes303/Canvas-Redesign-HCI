@@ -7,6 +7,11 @@
     --fc-button-hover-border-color: #f75d5d;
     --fc-button-active-bg-color: #752f2f;
     --fc-button-active-border-color: #752f2f;
+
+    --card1-color: rgb(199, 46, 46);
+    --card2-color: rgb(46, 107, 199);
+    --card3-color: rgb(56, 155, 52);
+    --card4-color: rgb(143, 50, 146);
   }
 
   /*Day headers*/
@@ -20,10 +25,13 @@
   margin: 0px;
 }
 
+
 /*Day Frame*/
+/*
 .fc .fc-daygrid-day-frame:hover {
   cursor: pointer;
 }
+
 
 /*Event Styling*/
 .fc-event {
@@ -32,4 +40,86 @@
   padding-top: 0.1em !important; /* Reduce top padding */
   padding-bottom: 0.1em !important; /* Reduce bottom padding */
   font-size: 0.85em !important; /* Optional: make text smaller */
+  cursor: pointer !important;
+}
+
+/*Class Specific event styling*/
+.algorithm-analysis{
+  background-color: var(--card1-color) !important;
+  border-color: var(--card1-color) !important;;
+}
+
+.hci{
+  background-color: var(--card2-color) !important;
+  border-color: var(--card2-color) !important;;
+}
+.intro-to-os{
+  background-color: var(--card3-color) !important;
+  border-color: var(--card3-color) !important;;
+}
+.artificial-intelligence{
+  background-color: var(--card4-color) !important;
+  border-color: var(--card4-color) !important;;
+}
+
+/*event info*/
+.event-info-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--box-bg, #2a2a2a);
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 25px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+  font-family: var(--font-family, sans-serif);
+  width: 75%;
+  height: 100px
+}
+
+body.light-mode .event-info-container{
+	background-color: white;
+	color:black;
+  border: #2a2a2a;
+}
+
+.event-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #f0f0f0;
+  padding-bottom: 5px;
+}
+
+.event-detail {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  padding-bottom: 5px;  
+}
+
+body.light-mode .event-title{
+  background-color: white;
+	color:black;
+}
+
+body.light-mode .event-detail{
+  background-color: white;
+	color:black;
+}
+
+#algo-event-toggle{
+  background-color: var(--card1-color);
+}
+
+#hci-event-toggle{
+  background-color: var(--card2-color);
+}
+
+#os-event-toggle{
+  background-color: var(--card3-color);
+}
+
+#ai-event-toggle{
+  background-color: var(--card4-color);
 }

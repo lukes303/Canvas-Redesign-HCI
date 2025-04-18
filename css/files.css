@@ -286,7 +286,7 @@ body.light-mode .folder-name {
     cursor: pointer;
     align-self: center;
     border: none;
-    transition: color 0.2s;
+    transition: background-color 0.2s;
     width: 18px;
     height: 18px;
     align-items: center;

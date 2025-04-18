@@ -24,12 +24,81 @@ document.addEventListener('DOMContentLoaded', function() {
       eventBorderColor: '#000000',
       eventTextColor: '#ffffff',
 
-      // Callback functions
+      // Add events here
+      events: [
+        {
+          title: '',
+          start: '2025-04-25',
+          classNames: ['algorithm-analysis'],
+          extendedProps: {
+            title: 'Assignment 1',
+            course: 'Algorithm Analysis',
+            due: '2025-04-25'
+          }
+        },
+        {
+          title: '',
+          start: '2025-04-26',
+          classNames: ['hci'],
+          extendedProps: {
+            title: 'Assignment 1',
+            course: 'HCI',
+            due: '2025-04-26'
+          }
+        },
+        {
+          title: '',
+          start: '2025-05-04',
+          classNames: ['intro-to-os'],
+          extendedProps: {
+            title: 'Project1',
+            course: 'Intro to Operating Systems',
+            due: '2025-05-04'
+          }
+        },
+        {
+          title: '',
+          start: '2025-05-10',
+          classNames: ['artificial-intelligence'],
+          extendedProps: {
+            title: 'Final',
+            course: 'Artificial Intelligence',
+            due: '2025-05-10'
+          }
+        }
+      ],
+
+
+      // date click functions
       dateClick: function(info) {
-          // Handle date clicks
-          console.log('Clicked on: ' + info.dateStr);
+        // Handle date clicks
+        console.log('Clicked on: ' + info.dateStr);
+      },
+
+      // event click
+      eventClick: function(info){
+        console.log('Event clicked:')
+  
+        // Call your existing function to display event details
+        displayEventDetails(info.event);
+
       }
+
     });
     calendar.render();
 
-  });
+    function displayEventDetails(event){
+      // Get the event details elements
+      const titleElement = document.getElementById('set-assignment');
+      const courseElement = document.getElementById('set-course');
+      const dueElement = document.getElementById('set-due-date');
+     
+      // Set the content of the details elements
+      titleElement.textContent = `${event.extendedProps.title}`;
+      courseElement.textContent = `${event.extendedProps.course}`;
+      dueElement.textContent = `${event.extendedProps.due}`;
+    }
+
+});
+
+
