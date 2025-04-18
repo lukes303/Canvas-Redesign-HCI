@@ -26,3 +26,23 @@ document.getElementById('calendar-button').addEventListener('click', function() 
     const sidebar = document.getElementById('calendar-sidebar');
     sidebar.classList.toggle('sidebar-active');
 });
+
+// Wait for the DOM to load
+document.addEventListener("DOMContentLoaded", () => {
+    const dialog = document.getElementById("welcome-dialog");
+    const okButton = document.getElementById("dialog-ok-button");
+    const checkbox = document.getElementById("dialog-checkbox");
+
+    // Show the dialog when the page loads
+    dialog.style.display = "flex";
+
+    // Enable the "Okay" button when the checkbox is checked
+    checkbox.addEventListener("change", () => {
+        okButton.disabled = !checkbox.checked; // Enable if checked, disable if unchecked
+    });
+
+    // Hide the dialog when the "Okay" button is clicked
+    okButton.addEventListener("click", () => {
+        dialog.style.display = "none";
+    });
+});
