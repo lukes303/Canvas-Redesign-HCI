@@ -49,3 +49,20 @@ Step 1: Use Windows PowerShell or linux to install FullCalendar library by runni
 Step 2: Clone the repository using git clone https://github.com/lukes303/Canvas-Redesign-HCI.git.
 Step 3: Open the cloned folder and run index.html in your favorite browser
 Step 4: The site is now working and open!
+
+# Note
+For prototype purposes, quick access links, to-do list links and adding shortcuts to quick access only fully work for the Algorithm Analysis class. Not every feature carried over from Canvas is fully implemented if we did not decide to change its functionality. Below are the features we have changed and can be used.
+
+# Features
+
+### Dark Mode
+To toggle darkmode, click the three dots settings button on the top right of the window. In the menu, click the dark mode button to switch between light and dark mode.
+
+### Calendar
+Open the calendar by clicking the calendar icon in the nav bar on the far left of the screen. Assignments will show up color coded by class. Click on an event to pull up more information on the assignment.
+
+### Quick Access
+Navigate to the files section by clicking on the folder icon in a class card. This will take you to the new files screen. Click the add button next to any file to add it to the quick accesss section of the class card for the current class. Delete quick access items by cliking the delete button that appears when hovering your mouse over the quick access item.
+
+### New Assignment and Files Page
+The assignment and files pages have been updated to match the new visual style of our re-design.
