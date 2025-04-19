@@ -51,7 +51,7 @@ Step 3: Open the cloned folder and run index.html in your favorite browser
 Step 4: The site is now working and open!
 
 # Note
-For prototype purposes, Quick access links, to-do list links and adding shortcuts to quick access only fully work for the Algorithm Analysis class. Not every feature carried over from Canvas is fully implemented if we did not decide to change its functionality. Below are the features we have changed.
+For prototype purposes, quick access links, to-do list links and adding shortcuts to quick access only fully work for the Algorithm Analysis class. Not every feature carried over from Canvas is fully implemented if we did not decide to change its functionality. Below are the features we have changed and can be used.
 
 # Features
 
@@ -66,7 +66,3 @@ Navigate to the files section by clicking on the folder icon in a class card. Th
 
 ### New Assignment and Files Page
 The assignment and files pages have been updated to match the new visual style of our re-design.
-
-### Notifications in Card View and new Add Course button
-For consistency with card view, there is a place for notifications in the top right of the dashboard. The add course button was change and placed in the top right as well. We did not change the functionality of these features just the visual placement, so they are not fully functional.
-
